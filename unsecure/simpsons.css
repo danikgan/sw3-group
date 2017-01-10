@@ -1,0 +1,38 @@
+/*
+CSE 190 M, Summer 2010, Marty Stepp
+CSS code for Simpsons session/cookie example
+*/
+
+html {
+    background-color: white;
+}
+
+body {
+    background-color: #eee;
+    width: 800px;
+    margin: auto;
+    padding: 1em;
+}
+
+#logoarea {
+	text-align: center;
+}
+
+#navigation li {
+	display: inline;
+	padding: 0.5em;
+	background-color: #bbb;
+	border: 3px outset gray;
+	margin-left: 1em;
+	margin-right: 1em;
+}
+
+table th {
+    border-bottom: 1px solid #aaa;
+    text-align: left;
+}
+
+table th,
+table td {
+    padding-right: 1em;
+}
