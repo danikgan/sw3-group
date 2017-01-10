@@ -1,28 +1,28 @@
 <?php
-$name = $_POST["name"];
-$pw = $_POST["password"];
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "simpsons";
 
-if (is_correct_password($name, $pw)) {
-    # redirect?
-    session_start();
-    $_SESSION["name"] = $name;
-    header("Location: grades.php");
-    die();
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+$name = $_POST['name'];
+$pw = $_POST['password'];
+$email = $_POST['email'];
+
+$sql = "INSERT INTO `students` (`id`, `name`, `email`, `password`) VALUES (NULL, $name, $email, $pw);";
+
+if ($conn->query($sql) === TRUE) {
+    echo "New record created successfully";
 } else {
-    print "--,.--;;;;;;;;;";
+    echo "Error: " . $sql . "<br>" . $conn->error;
 }
 
-# query database to see if user typed the right password
-function is_correct_password($name, $pw) {
-    $db = new PDO("mysql:dbname=simpsons", "root", "");
-    $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    $rows = $db->query("SELECT password FROM students WHERE name = '$name'");
-    foreach ($rows as $row) {
-        $correct_password = $row["password"];
-        if ($pw == $correct_password) {
-            return TRUE;
-        }
-    }
-    return FALSE;
-}
+$conn->close();
+
 ?>
