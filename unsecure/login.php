@@ -23,7 +23,7 @@
 		<form id="login" action="login-submit.php" method="post">
 			<fieldset>
 				<legend>Log In</legend>
-				<dl>
+				<dl><!--comment-->
 					<dt>Name</dt>
 					<dd>
 						<input type="text" name="name" />
