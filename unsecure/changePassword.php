@@ -20,11 +20,11 @@ if ($password && $newpassword) {
             $message = "Password must be 6-25 characters long";
         } else {
             // check whether username exists
-            $query    = "SELECT name FROM students WHERE name='$username' and password='$password'";
+            $query    = "SELECT * FROM students WHERE name='$username' and password='$password'";
             $result = $conn->query($query);
             //if theres a result change password to new password
             if ($row = mysqli_fetch_array($result)) {
-                $query          = "UPDATE students SET password='$newpassword' WHERE username='$username'";
+                $query          = "UPDATE students SET password='$newpassword' WHERE name='$username'";
                 $conn->query($query);
                 $message = "<strong>Password change successful!</strong>";
             } else {

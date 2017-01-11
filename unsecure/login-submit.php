@@ -23,6 +23,13 @@ function is_correct_password($name, $pw) {
 			return TRUE;
 		}
 	}
+	$rows = $db->query("SELECT password FROM teachers WHERE name = '$name'");
+	foreach ($rows as $row) {
+		$correct_password = $row["password"];
+		if ($pw == $correct_password) {
+			return TRUE;
+		}
+	}
 	return FALSE;
 }
 ?>
