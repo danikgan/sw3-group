@@ -13,7 +13,7 @@ if(!isset($_SESSION))
 
 include_once('connect.php');
 //clean the input now that we have a db connection
-$username       = $_SESSION['username'];
+$username = $_SESSION['name'];
 if ($password && $newpassword) {
     if ($repeatpassword == $newpassword) {
         if (strlen($newpassword) > 25 || strlen($newpassword) < 6) {
@@ -38,5 +38,8 @@ if ($password && $newpassword) {
 } else {
     $message = "Please enter all fields";
 }
+
+header('Location: settings.php');
+exit;
 
 ?>

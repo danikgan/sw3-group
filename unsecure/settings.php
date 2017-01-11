@@ -19,7 +19,7 @@
 <!--change username form -->
 <h3 style="text-align: center">Change Username</h3>
 <form method="post" action="changeUsername.php">
-    New Username: <input type='username' name='newUserName'>
+    New Username: <input type='text' name='newUserName'>
 
     <input type='submit' name='change' value='Change Username'>
     <input type='reset' name='reset' value='Reset'>
