@@ -14,18 +14,12 @@
 </div>
 
 <h1>Springfield Elementary Web Site</h1>
-
+<?php $message='';?>
 
 <!--change username form -->
 <h3 style="text-align: center">Change Username</h3>
-<form method="post" action="changepassword.php">
-    Current Username: <input type='username' name='username'>
-    <br>
-    <br>
-    New Username: <input type='username' name='newusername'>
-    <br>
-    <br>
-    Repeat New Username: <input type='username' name='repeatusername'>
+<form method="post" action="changeUsername.php">
+    New Username: <input type='username' name='newUserName'>
 
     <input type='submit' name='change' value='Change Username'>
     <input type='reset' name='reset' value='Reset'>
@@ -33,7 +27,7 @@
 <br><br>
 <!--change password form -->
 <h3 style="text-align: center">Change Password</h3>
-<form method="post" action="changepassword.php">
+<form method="post" action="changePassword.php">
     Current password: <input type='password' name='password'>
     <br>
     <br>
@@ -45,7 +39,9 @@
     <input type='submit' name='submit' value='Change Password'>
     <input type='reset' name='reset' value='Reset'>
 </form>
-
+<p><strong><?php
+        echo $message;
+        ?></strong></p>
 
 </body>
 </html>
