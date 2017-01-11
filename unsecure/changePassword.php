@@ -14,23 +14,20 @@ if(!isset($_SESSION))
 include_once('connect.php');
 //clean the input now that we have a db connection
 $username = $_SESSION['name'];
-if ($password && $newpassword) {
+if (isset($_POST['newpassword']) && isset($_POST['repeatpassword'])) {
     if ($repeatpassword == $newpassword) {
+        $result = $conn->query("SELECT password FROM students WHERE name = '".$username."'");
         if (strlen($newpassword) > 25 || strlen($newpassword) < 6) {
             $message = "Password must be 6-25 characters long";
         } else {
-            // check whether username exists
-            $query    = "SELECT * FROM students WHERE name='$username' and password='$password'";
-            $result = $conn->query($query);
-            //if theres a result change password to new password
-            if ($row = mysqli_fetch_array($result)) {
-                $query          = "UPDATE students SET password='$newpassword' WHERE name='$username'";
+            $row =$result->fetch_assoc();
+            $passwordcheck = trim($row['password']);
+            if($passwordcheck==$password) {
+                echo "hello";
+                $query = "UPDATE students SET password='$newpassword' WHERE name='$username'";
                 $conn->query($query);
-                $message = "<strong>Password change successful!</strong>";
-            } else {
-                $message = "User account not found.";
             }
-            mysqli_free_result($result);
+
         }
     } else {
         $message = "Password must match";
@@ -39,7 +36,7 @@ if ($password && $newpassword) {
     $message = "Please enter all fields";
 }
 
-header('Location: settings.php');
-exit;
+//header('Location: settings.php');
+//exit;
 
 ?>
