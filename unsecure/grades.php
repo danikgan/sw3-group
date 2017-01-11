@@ -2,10 +2,13 @@
 <html>
 	<head>
 		<title>Springfield Elementary School</title>
-		<link href="simpsons.css" type="text/css" rel="stylesheet" />
+		<style>
+		<?php include 'simpsons.css';?>
+		</style>
 	</head>
 
 	<body>
+	<?php include 'navigationBar.php';?>
 		<div id="logoarea">
 			<img src="simpsons.png" alt="logo" />
 		</div>
@@ -18,7 +21,10 @@
 			<tr><th>Course Name</th><th>Grade</th></tr>
 
 			<?php
-			session_start();
+			if(!isset($_SESSION))
+			{
+				session_start();
+			}
 			$name = $_SESSION["name"];
 			$query = "SELECT c.name, g.grade
 			          FROM students s
