@@ -42,7 +42,7 @@
 
 <br><br>
 <h3 style="text-align: center">Input File</h3>
-<form action="changeImage.php">
+<form action="changeFile.php">
     <input type="file" name="pic" accept="image/*">
     <input type="submit">
 </form>
@@ -58,7 +58,7 @@
 
 <br><br>
 <h3 style="text-align: center">Change Snippet</h3>
-<form method="post" action="changeUsername.php" id="snippetForm">
+<form method="post" action="changeSnippet.php" id="snippetForm">
 
     <textarea rows="4" cols="50" name="snippet" form="snippetForm">Enter snippet...</textarea>
     <input type='submit' name='change' value='Change Snippet'>

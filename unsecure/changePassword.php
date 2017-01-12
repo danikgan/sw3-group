@@ -23,7 +23,6 @@ if (isset($_POST['newpassword']) && isset($_POST['repeatpassword'])) {
             $row =$result->fetch_assoc();
             $passwordcheck = trim($row['password']);
             if($passwordcheck==$password) {
-                echo "hello";
                 $query = "UPDATE students SET password='$newpassword' WHERE name='$username'";
                 $conn->query($query);
             }
