@@ -65,6 +65,15 @@
     <input type='reset' name='reset' value='Reset'>
 </form>
 
+<br><br>
+<h3 style="text-align: center">Change Text Color</h3>
+<form method="post" action="changeTextColor.php">
+    New Text Color: <input type='text' name='newUserTextColor'>
+
+    <input type='submit' name='change' value='Change Text Color'>
+    <input type='reset' name='reset' value='Reset'>
+</form>
+
 <p><strong><?php
         echo $message;
         ?></strong></p>
