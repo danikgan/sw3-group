@@ -27,11 +27,12 @@ $row =$result->fetch_assoc();
 $image_url = trim($row['img_url']);
 $is_admin  = trim($row['is_admin']);
 $snippet   = trim($row['snippet']);
+$text_color = trim($row['text_colour']);
 ?>
 
 <h1>Springfield Elementary Web Site</h1>
 <img src='<?php echo $image_url;?>' alt="Profile Picture" >
-<p><?php echo $snippet;?></p>
+<?php echo '<p style="color: '.$text_color.'">'.$snippet.'</p>';?>
 
 
 </body>

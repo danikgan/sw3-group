@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7f0d1968-2a47-4128-bddc-fc4402bb63c6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/unsecure/changeTextColor.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unsecure/settings.php" afterPath="$PROJECT_DIR$/unsecure/settings.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unsecure/changeTextColor.php" afterPath="$PROJECT_DIR$/unsecure/changeTextColor.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unsecure/profile.php" afterPath="$PROJECT_DIR$/unsecure/profile.php" />
     </list>
     <ignored path="simpsons.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,16 +24,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="login.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/unsecure/login.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="login-submit.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/unsecure/login-submit.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -51,8 +40,8 @@
       <file leaf-file-name="settings.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/unsecure/settings.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="65" column="7" selection-start-line="65" selection-start-column="7" selection-end-line="65" selection-end-column="7" />
+            <state relative-caret-position="345">
+              <caret line="69" column="39" selection-start-line="69" selection-start-column="39" selection-end-line="69" selection-end-column="39" />
               <folding>
                 <element signature="n#style#0;n#h3#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h3#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -68,10 +57,10 @@
       <file leaf-file-name="changeTextColor.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/unsecure/changeTextColor.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+            <state relative-caret-position="240">
+              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding>
-                <marker date="1484225353997" expanded="true" signature="472:542" ph="UPDATE stude... " />
+                <marker date="1484247226074" expanded="true" signature="465:539" ph="UPDATE stude... " />
               </folding>
             </state>
           </provider>
@@ -80,10 +69,11 @@
       <file leaf-file-name="profile.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/unsecure/profile.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="32" column="59" selection-start-line="32" selection-start-column="59" selection-end-line="32" selection-end-column="59" />
+            <state relative-caret-position="540">
+              <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
               <folding>
-                <marker date="1484221056728" expanded="true" signature="405:456" ph="SELECT * FRO... students" />
+                <marker date="1484247111323" expanded="true" signature="405:456" ph="SELECT * FRO... students" />
+                <marker date="1484247111323" expanded="true" signature="768:775" ph="..." />
               </folding>
             </state>
           </provider>
@@ -97,6 +87,16 @@
               <folding>
                 <marker date="1484224637402" expanded="true" signature="450:516" ph="UPDATE stude... " />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="simpsons.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/unsecure/simpsons.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="31" column="16" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="16" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -170,12 +170,12 @@
         <option value="$PROJECT_DIR$/unsecure/register-submit.php" />
         <option value="$PROJECT_DIR$/unsecure/changeUsername.php" />
         <option value="$PROJECT_DIR$/unsecure/login-submit.php" />
-        <option value="$PROJECT_DIR$/unsecure/profile.php" />
         <option value="$PROJECT_DIR$/unsecure/changePassword.php" />
         <option value="$PROJECT_DIR$/unsecure/changeFile.php" />
         <option value="$PROJECT_DIR$/unsecure/changeSnippet.php" />
         <option value="$PROJECT_DIR$/unsecure/changeImage.php" />
         <option value="$PROJECT_DIR$/unsecure/settings.php" />
+        <option value="$PROJECT_DIR$/unsecure/profile.php" />
         <option value="$PROJECT_DIR$/unsecure/changeTextColor.php" />
       </list>
     </option>
@@ -319,12 +319,12 @@
       <option name="presentableId" value="Default" />
       <updated>1484049493584</updated>
       <workItem from="1484049495945" duration="9861000" />
-      <workItem from="1484135505966" duration="21962000" />
+      <workItem from="1484135505966" duration="23667000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31823000" />
+    <option name="totallyTimeSpent" value="33528000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="24" width="1366" height="744" extended-state="6" />
@@ -472,14 +472,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/unsecure/simpsons.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="31" column="16" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/unsecure/start.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -598,10 +590,39 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/unsecure/changeSnippet.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="26" selection-end-column="5" />
+          <folding>
+            <marker date="1484224637346" expanded="true" signature="461:529" ph="UPDATE stude... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unsecure/simpsons.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="31" column="16" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unsecure/profile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding>
+            <marker date="1484247111323" expanded="true" signature="405:456" ph="SELECT * FRO... students" />
+            <marker date="1484247111323" expanded="true" signature="768:775" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/unsecure/settings.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="65" column="7" selection-start-line="65" selection-start-column="7" selection-end-line="65" selection-end-column="7" />
+        <state relative-caret-position="345">
+          <caret line="69" column="39" selection-start-line="69" selection-start-column="39" selection-end-line="69" selection-end-column="39" />
           <folding>
             <element signature="n#style#0;n#h3#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h3#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -613,32 +634,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/unsecure/changeSnippet.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="26" selection-end-column="5" />
-          <folding>
-            <marker date="1484224637346" expanded="true" signature="461:529" ph="UPDATE stude... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/unsecure/profile.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="32" column="59" selection-start-line="32" selection-start-column="59" selection-end-line="32" selection-end-column="59" />
-          <folding>
-            <marker date="1484221056728" expanded="true" signature="405:456" ph="SELECT * FRO... students" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/unsecure/changeTextColor.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+        <state relative-caret-position="240">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding>
-            <marker date="1484225353997" expanded="true" signature="472:542" ph="UPDATE stude... " />
+            <marker date="1484247226074" expanded="true" signature="465:539" ph="UPDATE stude... " />
           </folding>
         </state>
       </provider>

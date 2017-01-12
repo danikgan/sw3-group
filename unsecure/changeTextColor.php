@@ -12,10 +12,10 @@ include_once('connect.php');
 $username       = $_SESSION['name'];
 if ($newUserTextColor) {
     if (strlen($newUserTextColor) > 200 || strlen($newUserTextColor) < 0) {
-        $message = "user snippet must be 0-200 characters long";
+        $message = "user text must be 7 characters long";
     } else {
 
-        $query = "UPDATE students SET snippet='$newUserTextColor' WHERE name='$username'";
+        $query = "UPDATE students SET text_colour='$newUserTextColor' WHERE name='$username'";
         $conn->query($query);
     }
 
