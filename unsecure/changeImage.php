@@ -17,8 +17,6 @@ if ($newUserImage) {
 
         $query = "UPDATE students SET img_url='$newUserImage' WHERE name='$username'";
         $conn->query($query);
-
-        mysqli_free_result($result);
     }
 
 } else {

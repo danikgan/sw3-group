@@ -58,9 +58,9 @@
 
 <br><br>
 <h3 style="text-align: center">Change Snippet</h3>
+<textarea rows="4" cols="50" name="newUserSnippet" form="snippetForm">Enter snippet...</textarea>
 <form method="post" action="changeSnippet.php" id="snippetForm">
 
-    <textarea rows="4" cols="50" name="snippet" form="snippetForm">Enter snippet...</textarea>
     <input type='submit' name='change' value='Change Snippet'>
     <input type='reset' name='reset' value='Reset'>
 </form>
