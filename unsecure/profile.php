@@ -12,8 +12,26 @@
 <div id="logoarea">
     <img src="simpsons.png" alt="logo" />
 </div>
+<?php
+if(!isset($_SESSION))
+{
+    session_start();
+}
+
+include_once('connect.php');
+$username = $_SESSION['name'];
+
+$result = $conn->query("SELECT * FROM students WHERE name = '".$username."'");
+
+$row =$result->fetch_assoc();
+$image_url = trim($row['img_url']);
+$is_admin  = trim($row['is_admin']);
+$snippet   = trim($row['snippet']);
+?>
 
 <h1>Springfield Elementary Web Site</h1>
+<img src='<?php echo $image_url;?>' alt="Profile Picture" >
+<p><?php echo $snippet;?></p>
 
 
 </body>

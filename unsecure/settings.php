@@ -39,6 +39,32 @@
     <input type='submit' name='submit' value='Change Password'>
     <input type='reset' name='reset' value='Reset'>
 </form>
+
+<br><br>
+<h3 style="text-align: center">Input File</h3>
+<form action="changeImage.php">
+    <input type="file" name="pic" accept="image/*">
+    <input type="submit">
+</form>
+
+<br><br>
+<h3 style="text-align: center">Change Image</h3>
+<form method="post" action="changeImage.php">
+    New Image: <input type='text' name='newUserImage'>
+
+    <input type='submit' name='change' value='Change Image'>
+    <input type='reset' name='reset' value='Reset'>
+</form>
+
+<br><br>
+<h3 style="text-align: center">Change Snippet</h3>
+<form method="post" action="changeUsername.php" id="snippetForm">
+
+    <textarea rows="4" cols="50" name="snippet" form="snippetForm">Enter snippet...</textarea>
+    <input type='submit' name='change' value='Change Snippet'>
+    <input type='reset' name='reset' value='Reset'>
+</form>
+
 <p><strong><?php
         echo $message;
         ?></strong></p>
