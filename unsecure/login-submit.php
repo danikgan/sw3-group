@@ -6,7 +6,7 @@ if (is_correct_password($name, $pw)) {
 	# redirect?
 	session_start();
 	$_SESSION["name"] = $name;
-	header("Location: grades.php");
+	header("Location: profile.php");
 	die();
 } else {
 	print "--,.--;;;;;;;;;";
