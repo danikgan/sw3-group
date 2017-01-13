@@ -22,7 +22,7 @@ include_once('connect.php');
 $username = $_SESSION['name'];
 
 $rows = $conn->query("SELECT * FROM students WHERE name = '$username'");
-$row =$result->fetch_assoc();
+$row =$rows->fetch_assoc();
 $image_url = trim($row['img_url']);
 $is_admin  = trim($row['is_admin']);
 $snippet   = trim($row['snippet']);
