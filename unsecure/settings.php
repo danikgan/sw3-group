@@ -57,11 +57,13 @@
 <br><br>
 <h3 style="text-align: center">Change Image</h3>
 <form method="post" action="changeImage.php">
-    New Image: <input type='text' name='newUserImage'>
+    New Profile Image: <input type='text' name='profileImage'><br>
+    New Page Image: <input type='text' name='pageImage'><br>
 
     <input type='submit' name='change' value='Change Image'>
     <input type='reset' name='reset' value='Reset'>
 </form>
+
 
 <br><br>
 <h3 style="text-align: center">Change Snippet</h3>

@@ -1,7 +1,9 @@
 <?php
-$newUserImage      = trim($_POST['newUserImage']);
+$profileImage = trim($_POST['profileImage']);
+$pageImage = trim($_POST['pageImage']);
+
 // Create some variables to hold output data
-$message        = '';
+$message = '';
 // Start to use PHP session
 if(!isset($_SESSION))
 {
@@ -9,18 +11,27 @@ if(!isset($_SESSION))
 }
 include_once('connect.php');
 
-$username       = $_SESSION['name'];
-if ($newUserImage) {
-    if (strlen($newUserImage) > 100 || strlen($newUserImage) < 1) {
+$name = $_SESSION['name'];
+if ($profileImage) {
+    if (strlen($profileImage) > 100 || strlen($profileImage) < 1) {
         $message = "user image must be 1-100 characters long";
     } else {
-
-        $query = "UPDATE students SET img_url='$newUserImage' WHERE name='$username'";
+        $query = "UPDATE students SET profile_img_url='$profileImage' WHERE name='$name'";
         $conn->query($query);
     }
+} 
 
-} else {
-    $message = "Please enter all fields";
+if ($pageImage){
+    if (strlen($pageImage) > 100 || strlen($pageImage) < 1) {
+        $message = "user image must be 1-100 characters long";
+    } else {
+        $query = "UPDATE students SET page_img_url='$pageImage' WHERE name='$name'";
+        $conn->query($query);
+    }
+}
+
+if (! ($pageImage || $profileImage)){
+	$message = "Please upload either new page image, or new profile image";
 }
 
 header('Location: settings.php');
