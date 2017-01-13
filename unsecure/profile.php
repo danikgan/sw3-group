@@ -12,30 +12,38 @@
 <div id="logoarea">
     <img src="simpsons.png" alt="logo" />
 </div>
-<?php
-if(!isset($_SESSION))
-{
-    session_start();
-}
+<table>
+	<tr><th>Content</th></tr>
+	<?php
+	if(!isset($_SESSION))
+	{
+	    session_start();
+	}
 
-include_once('connect.php');
-$username = $_SESSION['name'];
+	include_once('connect.php');
+	$name = $_SESSION['name'];
 
-$rows = $conn->query("SELECT * FROM students WHERE name = '$username'");
-$row =$rows->fetch_assoc();
-$image_url = trim($row['img_url']);
-$is_admin  = trim($row['is_admin']);
-$snippet   = trim($row['snippet']);
-$text_color = trim($row['text_colour']);
-//$web_url = trim($row['web_url']);
+	$rows = $conn->query("SELECT * FROM students WHERE name = '$username'");
+	$row =$rows->fetch_assoc();
+	$image_url = trim($row['img_url']);	
+	$text_color = trim($row['text_colour']);
+	//$web_url = trim($row['web_url'])
 
-//header("LOCATION: $web_url");
-?>
+	$rows = $conn->query("SELECT * FROM snippets 
+							WHERE fk_id = (SELECT id FROM students WHERE name='$name')");
+	foreach ($rows as $row){
+					$content = trim($row['content']);					
+					echo
+						 '<tr>
+									<td>'.$content.'</td>
+						<tr>';	
+	}
+	//header("LOCATION: $web_url");
+	?>
+</table>
 
 <h1>Springfield Elementary Web Site</h1>
 <img src='<?php echo $image_url;?>' alt="Profile Picture" >
-<?php echo '<p style="color: '.$text_color.'">'.$snippet.'</p>';?>
-
 
 </body>
 </html>

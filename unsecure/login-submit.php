@@ -16,15 +16,15 @@ if (is_correct_password($name, $pw)) {
 function is_correct_password($name, $pw) {
 	include_once('connect.php');
 	
-	$rows = mysqli_query($conn, "SELECT * FROM students WHERE name = '$name' AND password = '$pw'");
+	$rows = mysqli_query($conn, "SELECT name, password FROM students WHERE name = '$name' AND password = '$pw'");
 	
 	if(mysqli_num_rows($rows) > 0){
 		return TRUE;	
 	}
 
-	$rows = $conn->query($conn, "SELECT * FROM teachers WHERE name = '$name' AND password = '$pw'");
+	$rows = $conn->query($conn, "SELECT name, password FROM teachers WHERE name = '$name' AND password = '$pw'");
 	
-	if(mysqli_num_rows($rows) == 1){
+	if(mysqli_num_rows($rows) > 0){
 		return TRUE;	
 	}
 
