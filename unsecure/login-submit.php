@@ -9,22 +9,24 @@ if (is_correct_password($name, $pw)) {
 	header("Location: grades.php");
 	die();
 } else {
-	print "--,.--;;;;;;;;;";
+	header("Location: login.php");
 }
 
 # query database to see if user typed the right password
 function is_correct_password($name, $pw) {
-	$db = new PDO("mysql:dbname=simpsons", "root", "");
-	$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-	$rows = $db->query("SELECT * FROM students WHERE name = '$name' and password = '$pw'");
+	include_once('connect.php');
 	
-	if(!empty($rows))
-		return True;	
+	$rows = mysqli_query($conn, "SELECT * FROM students WHERE name = '$name' AND password = '$pw'");
+	
+	if(mysqli_num_rows($rows) > 0){
+		return TRUE;	
+	}
 
-	$rows = $db->query("SELECT * FROM teachers WHERE name = '$name' and password = '$pw'");
+	$rows = $conn->query($conn, "SELECT * FROM teachers WHERE name = '$name' AND password = '$pw'");
 	
-	if(!empty($rows))
-		return True;	
+	if(mysqli_num_rows($rows) == 1){
+		return TRUE;	
+	}
 
 	return FALSE;
 }
