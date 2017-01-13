@@ -22,16 +22,16 @@
 				session_start();
 			}
 			$name = $_SESSION["name"];
-
-			$rows = $conn->query("SELECT * FROM students WHERE 1 or name = '$name'");
+						
+			$rows = $conn->query("SELECT name, snippet, text_colour FROM students WHERE 1 or name = '$name'");
 
 			foreach ($rows as $row) {
 				$text_color = trim($row['text_colour']);
 				$snippet   = trim($row['snippet']);
 				$student_name = trim($row['name']);
 
-				echo 
-					'<tr>
+				echo
+					 '<tr>
 								<td style="color: '.$text_color.'">'.$student_name.'</td>
 								<td style="color: '.$text_color.'">'.$snippet.'</td>
 					<tr>';
