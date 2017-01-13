@@ -16,20 +16,16 @@ if (is_correct_password($name, $pw)) {
 function is_correct_password($name, $pw) {
 	$db = new PDO("mysql:dbname=simpsons", "root", "");
 	$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-	$rows = $db->query("SELECT password FROM students WHERE name = '$name'");
-	foreach ($rows as $row) {
-		$correct_password = $row["password"];
-		if ($pw == $correct_password) {
-			return TRUE;
-		}
-	}
-	$rows = $db->query("SELECT password FROM teachers WHERE name = '$name'");
-	foreach ($rows as $row) {
-		$correct_password = $row["password"];
-		if ($pw == $correct_password) {
-			return TRUE;
-		}
-	}
+	$rows = $db->query("SELECT * FROM students WHERE name = '$name' and password = '$pw'");
+	
+	if(!empty($rows))
+		return True;	
+
+	$rows = $db->query("SELECT * FROM teachers WHERE name = '$name' and password = '$pw'");
+	
+	if(!empty($rows))
+		return True;	
+
 	return FALSE;
 }
 ?>

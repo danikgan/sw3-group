@@ -13,6 +13,7 @@ $name = $_SESSION["name"];
     <li><a href="profile.php"><?php echo $name;?></a></li>
     <li><a href="grades.php">Grades</a></li>
     <li><a href="settings.php">Settings</a></li>
+    <li><a href="snippets.php">Snippets</a></li>
     <li class="icon">
         <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
     </li>
