@@ -22,12 +22,14 @@ include_once('connect.php');
 $username = $_SESSION['name'];
 
 $result = $conn->query("SELECT * FROM students WHERE name = '".$username."'");
-
 $row =$result->fetch_assoc();
 $image_url = trim($row['img_url']);
 $is_admin  = trim($row['is_admin']);
 $snippet   = trim($row['snippet']);
 $text_color = trim($row['text_colour']);
+//$web_url = trim($row['web_url']);
+
+//header("LOCATION: $web_url");
 ?>
 
 <h1>Springfield Elementary Web Site</h1>
