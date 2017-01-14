@@ -47,11 +47,18 @@
 							WHERE fk_id = (SELECT id FROM students WHERE name='$name')");
 
 	echo '<tr><th style="color:'.$text_colour.'">My Public Snippets</th></tr>';
+
 	foreach ($rows as $row){
+					$snipId = trim($row['id']);
 					$content = trim($row['content']);					
 					echo
 						 '<tr>
-									<td style="color:'.$text_colour.'">'.$content.'</td>
+									<td style="color:'.$text_colour.'">'.$content.'
+										<form method="post" action="deleteSnippet.php">
+										<input type="hidden" name="id" value='.$snipId.'>
+									    <input type="submit" name="delete" value="Delete">
+										</form>
+									</td> 
 						<tr>';	
 	}
 	//header("LOCATION: $web_url");
