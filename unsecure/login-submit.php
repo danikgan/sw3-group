@@ -4,7 +4,7 @@ $pw = $_POST["password"];
 
 if (is_correct_password($name, $pw)) {
 	# redirect?
-	session_start();
+	
 	$_SESSION["name"] = $name;
 	header("Location: grades.php");
 	die();
@@ -16,15 +16,14 @@ if (is_correct_password($name, $pw)) {
 function is_correct_password($name, $pw) {
 	include_once('connect.php');
 	
-	$rows = mysqli_query($conn, "SELECT name, password FROM students WHERE name = '$name' AND password = '$pw'");
+	$rows = mysqli_query($conn, "SELECT name, password, is_admin FROM students WHERE name = '$name' AND password = '$pw' LIMIT 1");
 	
 	if(mysqli_num_rows($rows) > 0){
-		return TRUE;	
-	}
+		session_start();
 
-	$rows = $conn->query($conn, "SELECT name, password FROM teachers WHERE name = '$name' AND password = '$pw'");
-	
-	if(mysqli_num_rows($rows) > 0){
+		$row = $rows->fetch_array(MYSQLI_ASSOC);
+
+		$_SESSION["is_admin"] = $row['is_admin'];
 		return TRUE;	
 	}
 

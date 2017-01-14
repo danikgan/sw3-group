@@ -22,12 +22,13 @@
 				session_start();
 			}
 			$name = $_SESSION["name"];
-						
-			$rows = $conn->query("SELECT name, snippet, text_colour FROM students WHERE 1 or name = '$name'");
+
+			$rows = $conn->query('SELECT content, s.name as name, s.text_colour as text_colour FROM snippets JOIN students s ON snippets.fk_id = s.id');
 
 			foreach ($rows as $row) {
 				$text_color = trim($row['text_colour']);
-				$snippet   = trim($row['snippet']);
+
+				$snippet = trim($row['content']);
 				$student_name = trim($row['name']);
 
 				echo

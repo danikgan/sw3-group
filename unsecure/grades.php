@@ -21,6 +21,7 @@
 			<tr><th>Course Name</th><th>Grade</th></tr>
 
 			<?php
+			include_once('connect.php');
 			if(!isset($_SESSION))
 			{
 				session_start();
@@ -31,9 +32,9 @@
 			          JOIN grades g ON g.student_id = s.id
 			          JOIN courses c ON g.course_id = c.id
 			          WHERE s.name = '$name'";
-			$db = new PDO("mysql:dbname=simpsons", "root", "");
-			$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-			$rows = $db->query($query);
+			// $db = new PDO("mysql:dbname=simpsons", "root", "");
+			// $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+			$rows = $conn->query($query);
 			foreach ($rows as $row) {
 				?>
 

@@ -9,13 +9,24 @@ if(!isset($_SESSION))
 }
 include_once('connect.php');
 
-$username       = $_SESSION['name'];
+$name = $_SESSION['name'];
+
+try {
+	$studentName = trim($_POST['studentName']);
+} catch (Exception $e){
+	$studentName = NULL;
+}
+
+if ($studentName != NULL) {
+	$name = $studentName;
+}
+
 if ($newUserTextColor) {
     if (strlen($newUserTextColor) > 200 || strlen($newUserTextColor) < 0) {
         $message = "user text must be 7 characters long";
     } else {
 
-        $query = "UPDATE students SET text_colour='$newUserTextColor' WHERE name='$username'";
+        $query = "UPDATE students SET text_colour='$newUserTextColor' WHERE name='$name'";
         $conn->query($query);
     }
 

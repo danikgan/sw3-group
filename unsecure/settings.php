@@ -19,6 +19,13 @@
 <!--change username form -->
 <h3 style="text-align: center">Change Username</h3>
 <form method="post" action="changeUsername.php">
+
+    <?php 
+        if($_SESSION['is_admin'] == 1){
+            echo 'Student Name: <input type="text" name="studentName"><br>';
+        }
+    ?>
+
     New Username: <input type='text' name='newUserName'>
 
     <input type='submit' name='change' value='Change Username'>
@@ -28,6 +35,13 @@
 <!--change password form -->
 <h3 style="text-align: center">Change Password</h3>
 <form method="post" action="changePassword.php">
+
+        <?php 
+            if($_SESSION['is_admin'] == 1){
+                echo 'Student Name: <input type="text" name="studentName"><br>';
+            }
+        ?>
+
     Current password: <input type='password' name='password'>
     <br>
     <br>
@@ -57,6 +71,13 @@
 <br><br>
 <h3 style="text-align: center">Change Image</h3>
 <form method="post" action="changeImage.php">
+
+    <?php 
+        if($_SESSION['is_admin'] == 1){
+            echo 'Student Name: <input type="text" name="studentName"><br>';
+        }
+    ?>
+
     New Profile Image: <input type='text' name='profileImage'><br>
     New Page Image: <input type='text' name='pageImage'><br>
 
@@ -67,10 +88,19 @@
 
 <br><br>
 <h3 style="text-align: center">Change Snippet</h3>
-<textarea rows="4" cols="50" name="newUserSnippet" form="snippetForm">Enter snippet...</textarea>
 <form method="post" action="changeSnippet.php" id="snippetForm">
 
-    <input type='submit' name='change' value='Change Snippet'>
+    <?php 
+        if($_SESSION['is_admin'] == 1){
+            echo 'Student Name: <input type="text" name="studentName"><br>';
+        }
+    ?>
+
+    <p>New Snippet</p><br>
+    <textarea rows="4" cols="50" name="newUserSnippet" form="snippetForm"></textarea><br>
+    <p>Update Private Snippet</p>
+    <textarea rows="4" cols="50" name="privateSnippet" form="snippetForm"></textarea><br>
+    <input type='submit' name='change' value='Submit'>
     <input type='reset' name='reset' value='Reset'>
 </form>
 
@@ -82,6 +112,25 @@
     <input type='submit' name='change' value='Change Text Color'>
     <input type='reset' name='reset' value='Reset'>
 </form>
+
+<?php 
+        if($_SESSION['is_admin'] == 1){
+            echo '<br><br><h3 style="text-align: center">Change Admin Right</h3>';
+            echo '<form method="post" action="changeAdminRight.php">';
+            echo 'Student Name (Case Sensitive): <input type="text" name="studentName"><br>';
+            echo 'is_admin (1 or 0): <input type="number" name="is_admin"><br>';
+            echo '<input type="submit" name="change">';
+            echo '</form>';
+
+            echo '<br><br><h3 style="text-align: center">Change Snippet Right</h3>';
+            echo '<form method="post" action="changeSnippetRight.php">';
+            echo 'Student Name (Case Sensitive): <input type="text" name="studentName"><br>';
+            echo 'Can post snippet (1 or 0): <input type="number" name="can_create_snippet"><br>';
+            echo '<input type="submit" name="change">';
+            echo '</form>';
+
+        }
+    ?>
 
 <p><strong><?php
         echo $message;
