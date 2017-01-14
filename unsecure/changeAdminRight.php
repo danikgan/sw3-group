@@ -11,7 +11,7 @@ if(!isset($_SESSION))
 }
 include_once('connect.php');
 
-if($is_admin && $name){
+if(isset($is_admin) && isset($name)){
     $query = "UPDATE students SET is_admin = '$is_admin' WHERE name='$name'";
     $rows = $conn->query($query);
 }   
