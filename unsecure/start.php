@@ -19,9 +19,10 @@
 			<li><a href="login.php">Log In</a></li>
 			<li><a href="register.php">Register</a></li>
 		</ul>
-<hr>
+		<hr>
+		<h3>List of Users</h3>
 		<table>
-			<tr><th>Name</th><th>Latest Snippet</th></tr>
+			<tr><th>Name</th></tr>
 			<?php
 			include_once('connect.php');
 			if(!isset($_SESSION))
@@ -30,6 +31,23 @@
 			}
 			$name = $_SESSION["name"];
 
+			$rows = $conn->query('SELECT name FROM students');
+
+			foreach ($rows as $row) {
+				$student_name = trim($row['name']);
+
+				echo
+					 '<tr>
+								<td>'.$student_name.'</td>
+					<tr>';
+			}
+			?>
+		</table>
+		<hr>
+		<h3>Latest Snippets by each users (Blank means no snippet)</h3>
+		<table>
+			<tr><th>Name</th><th>Latest Snippet</th></tr>
+			<?php
 			$query = 'SELECT content, s.name as name, s.text_colour as text_colour
 						FROM   (
 						       SELECT (
