@@ -18,6 +18,7 @@
 		<ul>
 			<li><a href="login.php">Log In</a></li>
 			<li><a href="register.php">Register</a></li>
+			<li><a href="snippets.php">Public Snippets</a></li>
 		</ul>
 		<hr>
 		<h3>List of Users</h3>
@@ -25,11 +26,7 @@
 			<tr><th>Name</th></tr>
 			<?php
 			include_once('connect.php');
-			if(!isset($_SESSION))
-			{
-				session_start();
-			}
-			$name = $_SESSION["name"];
+			$_SESSION['name'] = NULL;
 
 			$rows = $conn->query('SELECT name FROM students');
 

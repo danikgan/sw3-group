@@ -8,7 +8,11 @@
 </head>
 
 <body>
-<?php include 'navigationBar.php';?>
+<?php
+if(isset($_SESSION['name'])) {
+    include 'navigationBar.php';
+}
+?>
 <div id="logoarea">
     <img src="simpsons.png" alt="logo" />
 </div>
