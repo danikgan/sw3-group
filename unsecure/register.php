@@ -28,10 +28,6 @@ remember the student and can show that student's grades.
             <dd>
                 <input type="text" name="name" />
             </dd>
-            <dt>Email</dt>
-            <dd>
-                <input type="text" name="email" />
-            </dd>
             <dt>Password</dt>
             <dd>
                 <input type="password" name="password" />
