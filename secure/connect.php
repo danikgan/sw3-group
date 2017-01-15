@@ -1,8 +1,8 @@
 <?php
 include_once('sessionTimeout.php');
 $servername = "localhost";
-$username = "dev";
-$password = "0g14ju";
+$username = "root";
+$password = "";
 $dbname = "simpsons";
 
 // Create connection
