@@ -49,29 +49,25 @@
 						       SELECT (
 						              SELECT  id
 						              FROM    snippets s1
-						              WHERE   s1.fk_id = t1.fk_id
+						              WHERE   s1.name = t1.name
 						              ORDER BY
 						                      s1.id DESC
 						              LIMIT 1
 						              ) lid
 						       FROM   (
-						              SELECT  DISTINCT fk_id
+						              SELECT  DISTINCT name
 						              FROM    snippets
 						              ) t1
 						       ) ro, snippets t2
-						JOIN students s ON t2.fk_id = s.id
+						JOIN students s ON t2.name = s.name
 						WHERE  t2.id = ro.lid';
-
 			$rows = $conn->query($query);
-
 			foreach ($rows as $row) {
 				$text_color = trim($row['text_colour']);
-
 				$snippet = trim($row['content']);
 				$student_name = trim($row['name']);
-
 				echo
-					 '<tr>
+					'<tr>
 								<td style="color: '.$text_color.'">'.$student_name.'</td>
 								<td style="color: '.$text_color.'">'.$snippet.'</td>
 					<tr>';

@@ -100,7 +100,7 @@
     <textarea rows="4" cols="50" name="newUserSnippet" form="snippetForm"></textarea><br>
     <p>Update Private Snippet</p>
     <textarea rows="4" cols="50" name="privateSnippet" form="snippetForm"></textarea><br>
-    <input type='submit' name='change' value='Submit'>
+    <input type='submit' name='change' pattern="/^[a-zA-Z]+$/" value='Submit'>
     <input type='reset' name='reset' value='Reset'>
 </form>
 
