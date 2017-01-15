@@ -29,7 +29,7 @@ remember the student and can show that student's grades.
             form.name.focus();
             return false;
         }
-        re = /^\w+$/;
+        var re = /^\w+$/;
         if(!re.test(form.name.value)) {
             alert("Error: Username must contain only letters, numbers and underscores!");
             form.name.focus();
@@ -42,24 +42,24 @@ remember the student and can show that student's grades.
                 form.password.focus();
                 return false;
             }
-            if(form.password.value == form.username.value) {
+            if(form.password.value == form.name.value) {
                 alert("Error: Password must be different from Username!");
                 form.password.focus();
                 return false;
             }
-            re = /[0-9]/;
+            var re = /[0-9]/;
             if(!re.test(form.password.value)) {
                 alert("Error: password must contain at least one number (0-9)!");
                 form.password.focus();
                 return false;
             }
-            re = /[a-z]/;
+            var re = /[a-z]/;
             if(!re.test(form.password.value)) {
                 alert("Error: password must contain at least one lowercase letter (a-z)!");
                 form.password.focus();
                 return false;
             }
-            re = /[A-Z]/;
+            var re = /[A-Z]/;
             if(!re.test(form.password.value)) {
                 alert("Error: password must contain at least one uppercase letter (A-Z)!");
                 form.password.focus();
