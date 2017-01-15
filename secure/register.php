@@ -70,8 +70,6 @@ remember the student and can show that student's grades.
             form.password.focus();
             return false;
         }
-
-        alert("You entered a valid password: " + form.password.value);
         return true;
     }
 //comment
