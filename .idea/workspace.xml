@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7f0d1968-2a47-4128-bddc-fc4402bb63c6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/secure/register.php" afterPath="$PROJECT_DIR$/secure/register.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/secure/connect.php" afterPath="$PROJECT_DIR$/secure/connect.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unsecure/connect.php" afterPath="$PROJECT_DIR$/unsecure/connect.php" />
     </list>
     <ignored path="simpsons.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -23,29 +24,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="changeUsername.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/unsecure/changeUsername.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-              <folding>
-                <marker date="1484474034719" expanded="true" signature="637:697" ph="SELECT name students" />
-                <marker date="1484474034719" expanded="true" signature="873:931" ph="UPDATE stude... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="profile.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/unsecure/profile.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="531">
-              <caret line="33" column="76" selection-start-line="33" selection-start-column="76" selection-end-line="33" selection-end-column="76" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="register.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/unsecure/register.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -64,6 +42,16 @@
               <folding>
                 <marker date="1484476859324" expanded="true" signature="95:156" ph="INSERT INTO students... " />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="connect.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/unsecure/connect.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -135,11 +123,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="register.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="register.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/secure/register.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="501">
+            <state relative-caret-position="1258">
               <caret line="74" column="11" selection-start-line="74" selection-start-column="11" selection-end-line="74" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="connect.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/secure/connect.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -171,10 +169,11 @@
         <option value="$PROJECT_DIR$/unsecure/changeAdminRight.php" />
         <option value="$PROJECT_DIR$/unsecure/snippets.php" />
         <option value="$PROJECT_DIR$/unsecure/start.php" />
-        <option value="$PROJECT_DIR$/unsecure/connect.php" />
         <option value="$PROJECT_DIR$/secure/register-submit.php" />
         <option value="$PROJECT_DIR$/unsecure/register-submit.php" />
         <option value="$PROJECT_DIR$/secure/register.php" />
+        <option value="$PROJECT_DIR$/secure/connect.php" />
+        <option value="$PROJECT_DIR$/unsecure/connect.php" />
       </list>
     </option>
   </component>
@@ -346,12 +345,12 @@
       <workItem from="1484419018664" duration="2253000" />
       <workItem from="1484474042346" duration="513000" />
       <workItem from="1484474589063" duration="181000" />
-      <workItem from="1484474941361" duration="2136000" />
+      <workItem from="1484474941361" duration="2660000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44699000" />
+    <option name="totallyTimeSpent" value="45223000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -411,16 +410,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/unsecure/changeTextColor.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding>
-            <marker date="1484474034719" expanded="true" signature="610:680" ph="UPDATE stude... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/unsecure/changeUsername.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -659,14 +648,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/unsecure/connect.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/unsecure/start.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="629">
@@ -781,8 +762,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/secure/register.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="501">
+        <state relative-caret-position="1258">
           <caret line="74" column="11" selection-start-line="74" selection-start-column="11" selection-end-line="74" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/secure/connect.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unsecure/connect.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
           <folding />
         </state>
       </provider>
