@@ -5,7 +5,7 @@ $pw = preg_replace("/[^A-Za-z0-9 ]/", '',$_GET["password"]);
 if (is_correct_password($name, $pw)) {
 	
 	$_SESSION["name"] = $name;
-	header("Location: profile.php?id=".$_SESSION['id']."&password=$pw");
+	header("Location: profile.php");
 	die();
 } else {
 	header("Location: login.php");
