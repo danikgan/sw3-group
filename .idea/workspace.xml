@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7f0d1968-2a47-4128-bddc-fc4402bb63c6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/secure/login-submit.php" afterPath="$PROJECT_DIR$/secure/login-submit.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/secure/sessionTimeout.php" afterPath="$PROJECT_DIR$/secure/sessionTimeout.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/secure/changeSnippet.php" afterPath="$PROJECT_DIR$/secure/changeSnippet.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unsecure/connect.php" afterPath="$PROJECT_DIR$/unsecure/connect.php" />
     </list>
     <ignored path="simpsons.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -46,39 +47,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="logout.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/secure/logout.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="profile.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/secure/profile.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="43" selection-end-column="5" />
-              <folding>
-                <marker date="1484493213381" expanded="true" signature="280:389" ph="SELECT profi... students" />
-                <marker date="1484493213381" expanded="true" signature="1005:1048" ph="SELECT * FRO... snippets" />
-                <marker date="1484493213381" expanded="true" signature="1075:1081" ph="..." />
-                <marker date="1484493213381" expanded="true" signature="1255:1535" ph="..." />
-                <marker date="1484493213381" expanded="false" signature="1277:1283" ph="..." />
-                <marker date="1484493213381" expanded="true" signature="1300:1527" ph="..." />
-                <marker date="1484493213381" expanded="true" signature="1370:1512" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="connect.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="connect.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/unsecure/connect.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="2" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
+            <state relative-caret-position="51">
+              <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -97,12 +70,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="simpsons.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/secure/simpsons.css">
+      <file leaf-file-name="logout.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/secure/logout.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="51">
+              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="30" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="changeSnippetRight.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/secure/changeSnippetRight.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+              <folding>
+                <marker date="1484505423402" expanded="true" signature="375:456" ph="UPDATE stude... " />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -132,6 +117,21 @@
             <state relative-caret-position="51">
               <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="changeSnippet.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/secure/changeSnippet.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="637">
+              <caret line="51" column="29" selection-start-line="51" selection-start-column="29" selection-end-line="51" selection-end-column="29" />
+              <folding>
+                <marker date="1484511373894" expanded="true" signature="703:787" ph="SELECT can_c... students" />
+                <marker date="1484511373894" expanded="true" signature="1080:1205" ph="INSERT INTO snippets... " />
+                <marker date="1484511373894" expanded="true" signature="1131:1205" ph="SELECT '${$n... students" />
+                <marker date="1484511373894" expanded="true" signature="1438:1514" ph="UPDATE stude... " />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -186,12 +186,12 @@
         <option value="$PROJECT_DIR$/secure/changeAdminRight.php" />
         <option value="$PROJECT_DIR$/secure/changeImage.php" />
         <option value="$PROJECT_DIR$/secure/changePassword.php" />
-        <option value="$PROJECT_DIR$/secure/changeSnippet.php" />
         <option value="$PROJECT_DIR$/secure/changeSnippetRight.php" />
         <option value="$PROJECT_DIR$/secure/sessionTimeout.php" />
         <option value="$PROJECT_DIR$/secure/login-submit.php" />
-        <option value="$PROJECT_DIR$/secure/connect.php" />
         <option value="$PROJECT_DIR$/unsecure/connect.php" />
+        <option value="$PROJECT_DIR$/secure/connect.php" />
+        <option value="$PROJECT_DIR$/secure/changeSnippet.php" />
       </list>
     </option>
   </component>
@@ -381,12 +381,12 @@
       <workItem from="1484419018664" duration="2253000" />
       <workItem from="1484474042346" duration="513000" />
       <workItem from="1484474589063" duration="181000" />
-      <workItem from="1484474941361" duration="17968000" />
+      <workItem from="1484474941361" duration="19283000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60531000" />
+    <option name="totallyTimeSpent" value="61846000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -745,29 +745,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/secure/changeSnippet.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-          <folding>
-            <marker date="1484505423415" expanded="true" signature="703:787" ph="SELECT can_c... students" />
-            <marker date="1484505423415" expanded="true" signature="1080:1205" ph="INSERT INTO snippets... " />
-            <marker date="1484505423415" expanded="true" signature="1131:1205" ph="SELECT '${$n... students" />
-            <marker date="1484505423415" expanded="true" signature="1438:1514" ph="UPDATE stude... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/secure/changeSnippetRight.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-          <folding>
-            <marker date="1484505423402" expanded="true" signature="375:456" ph="UPDATE stude... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/secure/changeTextColor.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -789,14 +766,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/secure/logout.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/secure/profile.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -809,17 +778,6 @@
             <marker date="1484493213381" expanded="false" signature="1277:1283" ph="..." />
             <marker date="1484493213381" expanded="true" signature="1300:1527" ph="..." />
             <marker date="1484493213381" expanded="true" signature="1370:1512" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/secure/settings.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="98" column="26" selection-start-line="98" selection-start-column="26" selection-end-line="98" selection-end-column="26" />
-          <folding>
-            <marker date="1484498339919" expanded="true" signature="3548:3566" ph="..." />
-            <marker date="1484498339919" expanded="true" signature="3962:3980" ph="..." />
           </folding>
         </state>
       </provider>
@@ -875,6 +833,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/unsecure/connect.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/secure/connect.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -883,11 +849,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/unsecure/connect.php">
+    <entry file="file://$PROJECT_DIR$/secure/settings.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="2" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
+        <state relative-caret-position="399">
+          <caret line="98" column="26" selection-start-line="98" selection-start-column="26" selection-end-line="98" selection-end-column="26" />
+          <folding>
+            <marker date="1484498339919" expanded="true" signature="3548:3566" ph="..." />
+            <marker date="1484498339919" expanded="true" signature="3962:3980" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/secure/logout.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="30" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/secure/changeSnippetRight.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+          <folding>
+            <marker date="1484505423402" expanded="true" signature="375:456" ph="UPDATE stude... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/secure/changeSnippet.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="637">
+          <caret line="51" column="29" selection-start-line="51" selection-start-column="29" selection-end-line="51" selection-end-column="29" />
+          <folding>
+            <marker date="1484511373894" expanded="true" signature="703:787" ph="SELECT can_c... students" />
+            <marker date="1484511373894" expanded="true" signature="1080:1205" ph="INSERT INTO snippets... " />
+            <marker date="1484511373894" expanded="true" signature="1131:1205" ph="SELECT '${$n... students" />
+            <marker date="1484511373894" expanded="true" signature="1438:1514" ph="UPDATE stude... " />
+          </folding>
         </state>
       </provider>
     </entry>

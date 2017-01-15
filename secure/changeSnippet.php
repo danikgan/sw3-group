@@ -57,5 +57,5 @@ if (!($privateSnippet || $newUserSnippet)){
 	$message = "Fill in either private Snippet or new snippet form.";
 }
 
-header('Location: settings.php');
+header("Location: start.php");
 exit;
