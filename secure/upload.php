@@ -3,17 +3,24 @@ if(isset($_POST['upload']) && $_FILES['userfile']['size'] > 0)
 {
     $fileName = $_FILES['userfile']['name'];
     $tmpName  = $_FILES['userfile']['tmp_name'];
+    $path = $_FILES['userfile']['name'];
+    $ext = pathinfo($path, PATHINFO_EXTENSION);
 
     if(!isset($_SESSION)){
         session_start();
     }
     // UPLOAD ONTO THE DIRECTORY
-    if(!file_exists($_SESSION['id']."/")){
-        // If this returns Permission denied, try to chmod -R 775 {.../SimpsonSecure/unsecure/}. If it doesn't work, try 777. Be carful, it opens up the RW perm to the world.
-        mkdir($_SESSION['id']."/", 0777, true);  //This opens up the directory to the world.
-    }
+    if($ext!="php") {
+        if (!file_exists($_SESSION['id'] . "/")) {
+            // If this returns Permission denied, try to chmod -R 775 {.../SimpsonSecure/unsecure/}. If it doesn't work, try 777. Be carful, it opens up the RW perm to the world.
+            mkdir($_SESSION['id'] . "/", 0777, true);  //This opens up the directory to the world.
+        }
 
-    move_uploaded_file($tmpName, $_SESSION['id']."/".$fileName);
+        move_uploaded_file($tmpName, $_SESSION['id'] . "/" . $fileName);
+        echo "<br>File $fileName uploaded<br>";
+    }else{
+        echo "u have been found of trying to hack our servers, SWAT is on the way to your house";
+    }
 
     // $fileSize = $_FILES['userfile']['size'];
     // $fileType = $_FILES['userfile']['type'];
@@ -40,6 +47,5 @@ if(isset($_POST['upload']) && $_FILES['userfile']['size'] > 0)
 
     // $conn->query($query) or die('Error, query failed');
 
-    echo "<br>File $fileName uploaded<br>";
 }
 ?>

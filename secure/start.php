@@ -26,7 +26,6 @@
 			<tr><th>Name</th></tr>
 			<?php
 			include_once('connect.php');
-			$_SESSION['name'] = NULL;
 
 			$rows = $conn->query('SELECT name FROM students');
 

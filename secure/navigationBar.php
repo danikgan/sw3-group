@@ -14,6 +14,7 @@ $name = $_SESSION["name"];
     <li><a href="grades.php">Grades</a></li>
     <li><a href="settings.php">Settings</a></li>
     <li><a target="_blank" href="snippets.php">Public Snippets</a></li>
+    <li><a href="logout.php" style="margin-left: 40%">Logout</a></li>
     <li class="icon">
         <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
     </li>
