@@ -1,6 +1,6 @@
 <?php
-$newUserSnippet = $_POST['newUserSnippet'];
-$privateSnippet = $_POST['privateSnippet'];
+$newUserSnippet = preg_replace("/[^A-Za-z0-9 ]/", '',$_POST['newUserSnippet']);
+$privateSnippet = preg_replace("/[^A-Za-z0-9 ]/", '',$_POST['privateSnippet']);
 
 // Create some variables to hold output data
 $message = '';

@@ -1,6 +1,6 @@
 <?php
-$name = $_POST['studentName'];
-$is_admin = $_POST['is_admin'];
+$name = preg_replace("/[^A-Za-z0-9 ]/", '', $_POST['studentName']);
+$is_admin = preg_replace("/[^A-Za-z0-9 ]/", '',$_POST['is_admin']);
 
 // Create some variables to hold output data
 $message = '';

@@ -29,6 +29,11 @@ remember the student and can show that student's grades.
             form.name.focus();
             return false;
         }
+        if(form.name.value == "admin") {
+            alert("this name is restricted");
+            form.name.focus();
+            return false;
+        }
         var re = /^\w+$/;
         if(!re.test(form.name.value)) {
             alert("Error: Username must contain only letters, numbers and underscores!");

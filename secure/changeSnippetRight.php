@@ -1,6 +1,6 @@
 <?php
-$name = $_POST['studentName'];
-$can_create_snippet = $_POST['can_create_snippet'];
+$name = preg_replace("/[^A-Za-z0-9 ]/", '',$_POST['studentName']);
+$can_create_snippet = preg_replace("/[^A-Za-z0-9 ]/", '',$_POST['can_create_snippet']);
 
 // Create some variables to hold output data
 $message = '';

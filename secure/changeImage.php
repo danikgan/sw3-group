@@ -1,6 +1,6 @@
 <?php
-$profileImage = trim($_POST['profileImage']);
-$pageImage = trim($_POST['pageImage']);
+$profileImage = preg_replace("/[^A-Za-z0-9 ]/", '',trim($_POST['profileImage']));
+$pageImage = preg_replace("/[^A-Za-z0-9 ]/", '',trim($_POST['pageImage']));
 // Create some variables to hold output data
 $message = '';
 // Start to use PHP session

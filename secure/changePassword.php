@@ -1,8 +1,8 @@
 <?php
 // Grab the form data
-$password       = trim($_POST['password']);
-$newpassword    = trim($_POST['newpassword']);
-$repeatpassword = trim($_POST['repeatpassword']);
+$password       = preg_replace("/[^A-Za-z0-9 ]/", '',trim($_POST['password']));
+$newpassword    = preg_replace("/[^A-Za-z0-9 ]/", '',trim($_POST['newpassword']));
+$repeatpassword = preg_replace("/[^A-Za-z0-9 ]/", '',trim($_POST['repeatpassword']));
 // Create some variables to hold output data
 $message        = '';
 // Start to use PHP session

@@ -1,6 +1,6 @@
 <?php
-$name = $_GET["name"];
-$pw = $_GET["password"];
+$name = preg_replace("/[^A-Za-z0-9 ]/", '',$_GET["name"]);
+$pw = preg_replace("/[^A-Za-z0-9 ]/", '',$_GET["password"]);
 
 if (is_correct_password($name, $pw)) {
 	
@@ -15,16 +15,16 @@ if (is_correct_password($name, $pw)) {
 # query database to see if user typed the right password
 function is_correct_password($name, $pw) {
 	include_once('connect.php');
-	
+
 	$rows = mysqli_query($conn, "SELECT id, name, password, is_admin FROM students WHERE name = '$name' AND password = '$pw' LIMIT 1");
-	
+
 	if(mysqli_num_rows($rows) > 0){
 		session_start();
 
 		$row = $rows->fetch_array(MYSQLI_ASSOC);
 		$_SESSION["id"] = $row['id'];
 		$_SESSION["is_admin"] = $row['is_admin'];
-		return TRUE;	
+		return TRUE;
 	}
 
 	return FALSE;
