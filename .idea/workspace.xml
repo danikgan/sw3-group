@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7f0d1968-2a47-4128-bddc-fc4402bb63c6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/secure/register-submit.php" afterPath="$PROJECT_DIR$/secure/register-submit.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/secure/register.php" afterPath="$PROJECT_DIR$/secure/register.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unsecure/register-submit.php" afterPath="$PROJECT_DIR$/unsecure/register-submit.php" />
     </list>
     <ignored path="simpsons.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -140,8 +138,8 @@
       <file leaf-file-name="register.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/secure/register.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
-              <caret line="79" column="97" selection-start-line="79" selection-start-column="97" selection-end-line="79" selection-end-column="97" />
+            <state relative-caret-position="501">
+              <caret line="74" column="11" selection-start-line="74" selection-start-column="11" selection-end-line="74" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -348,12 +346,12 @@
       <workItem from="1484419018664" duration="2253000" />
       <workItem from="1484474042346" duration="513000" />
       <workItem from="1484474589063" duration="181000" />
-      <workItem from="1484474941361" duration="1955000" />
+      <workItem from="1484474941361" duration="2136000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44518000" />
+    <option name="totallyTimeSpent" value="44699000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -783,8 +781,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/secure/register.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="79" column="97" selection-start-line="79" selection-start-column="97" selection-end-line="79" selection-end-column="97" />
+        <state relative-caret-position="501">
+          <caret line="74" column="11" selection-start-line="74" selection-start-column="11" selection-end-line="74" selection-end-column="11" />
           <folding />
         </state>
       </provider>

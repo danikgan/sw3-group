@@ -74,7 +74,7 @@ remember the student and can show that student's grades.
         alert("You entered a valid password: " + form.password.value);
         return true;
     }
-
+//comment
 </script>
 
 <form id="register" action="register-submit.php" method="post" onsubmit="return checkForm(this);">
