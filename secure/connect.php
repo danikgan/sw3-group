@@ -3,7 +3,7 @@ include_once('sessionTimeout.php');
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "simpsons";
+$dbname = "localdb";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
