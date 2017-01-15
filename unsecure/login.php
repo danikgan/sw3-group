@@ -20,7 +20,7 @@
 	
 		<h2>Log In</h2>
 		
-		<form id="login" action="login-submit.php" method="post">
+		<form id="login" action="login-submit.php" method="get">
 			<fieldset>
 				<legend>Log In</legend>
 				<dl><!--comment-->

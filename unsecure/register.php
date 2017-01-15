@@ -20,7 +20,7 @@ remember the student and can show that student's grades.
 
 <h2>Register</h2>
 
-<form id="register" action="register-submit.php" method="get">
+<form id="register" action="register-submit.php" method="post">
     <fieldset>
         <legend>Register</legend>
         <dl><!--comment-->
