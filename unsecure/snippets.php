@@ -27,7 +27,7 @@ if(isset($_SESSION['name'])) {
 		}
 		$name = $_SESSION["name"];
 
-		$rows = $conn->query('SELECT content, s.name as name, s.text_colour as text_colour FROM snippets JOIN students s ON snippets.fk_id = s.id');
+		$rows = $conn->query('SELECT content, s.name as name, s.text_colour as text_colour FROM snippets JOIN students s ON snippets.name');
 
 		foreach ($rows as $row) {
 			$text_color = trim($row['text_colour']);

@@ -14,7 +14,7 @@
 
 	$name = $_SESSION['name'];
 
-	$rows = $conn->query("SELECT * FROM students WHERE name = '$name' LIMIT 1;");
+	$rows = $conn->query("SELECT profile_img_url, page_img_url, text_colour, private_snippet FROM students WHERE name = '$name' LIMIT 1;");
 	$row = $rows->fetch_array(MYSQLI_ASSOC);
 
 	$profile_img_url = $row['profile_img_url'];	
@@ -23,7 +23,7 @@
 	$private_snippet = $row['private_snippet'];
 
 	if($page_img_url != NULL){
-		echo '<img src="'.$page_img_url.'" alt="Invalid Logo">';
+		echo '<img src="'.$page_img_url.'">';
 	} else {
 		echo '<img src="simpsons.png">';
 	}
@@ -43,8 +43,7 @@
 	    session_start();
 	}
 
-	$rows = $conn->query("SELECT * FROM snippets 
-							WHERE fk_id = (SELECT id FROM students WHERE name='$name')");
+	$rows = $conn->query("SELECT * FROM snippets WHERE name = '$name'");
 
 	echo '<tr><th style="color:'.$text_colour.'">My Public Snippets</th></tr>';
 
