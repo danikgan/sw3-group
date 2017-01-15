@@ -1,10 +1,10 @@
 <?php
 include_once('connect.php');
 
-$name = $_POST['name'];
-$pw = $_POST['password'];
+$name = $_GET['name'];
+$pw = $_GET['password'];
 
-$sql = "INSERT INTO students (id, name, password) VALUES (NULL, '$name', '$pw');";
+$sql = "INSERT INTO students (name, password) VALUES ('$name', '$pw');";
 
 if ($conn->query($sql) === TRUE) {
     echo "New record created successfully";
